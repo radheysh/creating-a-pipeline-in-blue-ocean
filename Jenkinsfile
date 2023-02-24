@@ -10,6 +10,7 @@ pipeline {
     stage('Build') {
       steps {
         sh 'npm install'
+        git(url: 'https://github.com/radheysh/creating-a-pipeline-in-blue-ocean.git', branch: 'master')
       }
     }
 
